@@ -1,0 +1,78 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Python cache
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info
+.conda
+
+# Entorno
+env
+venv
+.venv
+
+# IDE
+.vscode
+.idea
+*.swp
+
+# Documentación
+docs
+references
+
+# Notebooks y ejemplos
+notebooks
+examples
+actualizacion
+*.ipynb
+
+# Tests
+tests
+.pytest_cache
+htmlcov
+.coverage
+reports
+
+# Config
+config
+
+# Data y modelos innecesarios
+data/interim
+data/processed
+data/raw/*.dvc
+mlflow
+dvc_remote
+models
+*.dvc
+
+# Archivos innecesarios
+*.log
+*.csv
+*.md
+!api/requirements.txt
+.DS_Store
+Thumbs.db
+Makefile
+LICENSE
+*.yml
+!docker-compose.yml
+*.yaml
+setup.py
+pyproject.toml
+pytest.ini
+check_env.py
+test_environment.py
+verify_databricks.py
+setup_project.ps1
+activate_env.ps1
+environment.yml
+CCDS_*
+obesitymine.egg-info

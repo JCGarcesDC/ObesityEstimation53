@@ -380,8 +380,8 @@ class OutlierDetector(BasePreprocessor):
                     )
                 
                 elif self.action == 'cap':
-                    df_out.loc[df_out[col] < lower, col] = lower
-                    df_out.loc[df_out[col] > upper, col] = upper
+                    # Usar clip() para evitar FutureWarning de incompatibilidad de dtype
+                    df_out[col] = df_out[col].clip(lower=lower, upper=upper)
                     logger.info(
                         f"{col}: capped {n_outliers} outliers "
                         f"(bounds: [{lower:.2f}, {upper:.2f}])"

@@ -249,14 +249,12 @@ Contains sensitive information:
 ## Testing
 
 ```bash
-# Run all tests
-pytest tests/
+# Ejecución rápida (recomendada)
+pytest -q
 
-# Run with coverage
-pytest --cov=src tests/
-
-# Run specific test file
-pytest tests/test_limpieza.py
+# Opcionales
+pytest --cov=src tests/      # con cobertura
+pytest tests/test_*.py       # archivo(s) específico(s)
 ```
 
 ## Project Features

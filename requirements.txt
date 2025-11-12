@@ -7,3 +7,6 @@ seaborn
 notebook
 xgboost
 joblib
+# Testing (añadido para ejecutar pruebas sin conda)
+pytest
+pytest-cov
